@@ -34,6 +34,28 @@ li {
   text-align: center;
   margin-bottom: 65px;
 }
+.wrapper {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+/* フェードイン */
+.wrapper {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  .wrapper.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ナビのハイライト */
+  nav a.active {
+    border-bottom: 2px solid #d28f6b;
+    font-weight: bold;
+  }
 
 /*-------------------------------------------
 ヘッダー
